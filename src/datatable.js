@@ -49,10 +49,7 @@ export default function Datatable() {
     },
   };
   const handleClose = () => {
-
     setState({ ...state, onUpdate: false });
-    
-
   };
 
   //on page load
