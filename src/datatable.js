@@ -28,7 +28,7 @@ export default function Datatable() {
     let rIndex = state.selectedRows["dataIndex"];
     console.log(rIndex);
   };
-  const  options={
+  const options = {
     filterType: "checkbox",
     onRowSelectionChange: getRows,
     customToolbarSelect: (selectedRows, displayData, setSelectedRows) => {
@@ -57,8 +57,10 @@ export default function Datatable() {
     setState({ ...state, data: data, columns: columns });
   }, []);
   return (
-    <div  className="custom-mui-table-container">
-      <button onClick={handleFetch}  className="fetch-button">Fetch</button>
+    <div className="custom-mui-table-container">
+      <button onClick={handleFetch} className="fetch-button">
+        Fetch
+      </button>
 
       <MUIDataTable
         data={state.data}
@@ -86,7 +88,7 @@ export default function Datatable() {
               &times;
             </span>
             <h2> Popup</h2>
-            <p>This is the content of the  popup.</p>
+            <p>This is the content of the popup.</p>
           </div>
         </div>
       </div>
