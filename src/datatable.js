@@ -1,8 +1,8 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import MUIDataTable from "mui-datatables";
-import React, { useEffect, useState } from "react";
-import "./App.css";
-import { columns, data } from "./data";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import MUIDataTable from 'mui-datatables';
+import React, { useEffect, useState } from 'react';
+import './App.css';
+import { columns, data } from './data';
 
 let newArr = [];
 export default function Datatable() {
@@ -25,11 +25,11 @@ export default function Datatable() {
   };
   const handleDelete = () => {
     console.log(state.selectedRows);
-    let rIndex = state.selectedRows["dataIndex"];
+    let rIndex = state.selectedRows['dataIndex'];
     console.log(rIndex);
   };
   const options = {
-    filterType: "checkbox",
+    filterType: 'checkbox',
     onRowSelectionChange: getRows,
     customToolbarSelect: (selectedRows, displayData, setSelectedRows) => {
       // Hide the delete button when any row is selected
@@ -49,7 +49,9 @@ export default function Datatable() {
     },
   };
   const handleClose = () => {
+
     setState({ ...state, onUpdate: false });
+    
   };
 
   //on page load
@@ -66,7 +68,7 @@ export default function Datatable() {
         data={state.data}
         columns={state.columns}
         options={options}
-        classes={{ root: "custom-mui-table" }}
+        classes={{ root: 'custom-mui-table' }}
       />
 
       <div className="custom-buttons">
@@ -78,7 +80,7 @@ export default function Datatable() {
       </div>
 
       <div>
-        <div className={`popup ${state.onUpdate ? "active" : ""}`} id="popup">
+        <div className={`popup ${state.onUpdate ? 'active' : ''}`} id="popup">
           <div className="popup-content">
             <span
               className="close-popup-btn"
