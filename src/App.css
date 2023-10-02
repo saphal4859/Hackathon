@@ -18,8 +18,7 @@ body {
 /* Buttons */
 button {
   padding: 10px 20px;
-  
-  border: none;
+  border: 2px solid #000; /* Add a black border */
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
@@ -31,17 +30,19 @@ button:hover {
   background-color: #0056b3; /* Darker blue on hover */
   color: #fff;
 }
-.delete-button {
-  background-color: #ff0000; /* Red background color */
-  color: #fff; /* White text color */
-  border: none; /* Remove the button border */
-  padding: 10px 20px; /* Adjust padding as needed */
-  border-radius: 5px; /* Add rounded corners */
-  cursor: pointer; /* Change cursor on hover */
-}
 
 .delete-button:hover {
   background-color: #cc0000; /* Darker red on hover */
+}
+.add-button:hover {
+  background-color: rgb(6, 170, 6); /* Darker red on hover */
+}
+.fetch-button:hover {
+  background-color: #0056b3; /* Darker red on hover */
+}
+.update-button:hover {
+  background-color: #e0d208; /* Darker red on hover */
+  color: black;
 }
 
 /* Centered Container */

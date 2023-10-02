@@ -59,6 +59,16 @@ export default function Datatable() {
   return (
     <div className="custom-mui-table-container">
       
+      <div className="custom-buttons">
+      <button onClick={handleFetch} className="fetch-button">
+        Fetch
+      </button>
+        <button onClick={handleAdd}  className="add-button" >Add</button>
+        <button onClick={handleUpdate} id="openPopupBtn"  className="update-button">
+          Update
+        </button>
+        <button onClick={handleDelete} className="delete-button">Delete</button>
+      </div>
       <MUIDataTable
         data={state.data}
         columns={state.columns}
@@ -66,16 +76,7 @@ export default function Datatable() {
         classes={{ root: 'custom-mui-table' }}
       />
 
-      <div className="custom-buttons">
-      <button onClick={handleFetch} className="fetch-button">
-        Fetch
-      </button>
-        <button onClick={handleAdd} >Add</button>
-        <button onClick={handleUpdate} id="openPopupBtn">
-          Update
-        </button>
-        <button onClick={handleDelete} className="delete-button">Delete</button>
-      </div>
+     
 
       <div>
         <div className={`popup ${state.onUpdate ? 'active' : ''}`} id="popup">
