@@ -58,10 +58,7 @@ export default function Datatable() {
   }, []);
   return (
     <div className="custom-mui-table-container">
-      <button onClick={handleFetch} className="fetch-button">
-        Fetch
-      </button>
-
+      
       <MUIDataTable
         data={state.data}
         columns={state.columns}
@@ -70,6 +67,9 @@ export default function Datatable() {
       />
 
       <div className="custom-buttons">
+      <button onClick={handleFetch} className="fetch-button">
+        Fetch
+      </button>
         <button onClick={handleAdd}>Add</button>
         <button onClick={handleUpdate} id="openPopupBtn">
           Update
