@@ -70,11 +70,11 @@ export default function Datatable() {
       <button onClick={handleFetch} className="fetch-button">
         Fetch
       </button>
-        <button onClick={handleAdd}>Add</button>
+        <button onClick={handleAdd} >Add</button>
         <button onClick={handleUpdate} id="openPopupBtn">
           Update
         </button>
-        <button onClick={handleDelete}>Delete</button>
+        <button onClick={handleDelete} className="delete-button">Delete</button>
       </div>
 
       <div>
